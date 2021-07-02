@@ -1,0 +1,167 @@
+<%= form_with(model: candidate) do |form| %>
+  <% if candidate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(candidate.errors.count, "error") %> prohibited this candidate from being saved:</h2>
+
+      <ul>
+        <% candidate.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :genre %>
+    <%= form.text_field :genre %>
+  </div>
+
+  <div class="field">
+    <%= form.label :legal_name %>
+    <%= form.text_field :legal_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avatar %>
+    <%= form.text_field :avatar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mailing_address %>
+    <%= form.text_field :mailing_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :avatar_id %>
+    <%= form.text_field :avatar_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :postal_code %>
+    <%= form.number_field :postal_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cell_phone %>
+    <%= form.number_field :cell_phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_of_grade %>
+    <%= form.date_select :date_of_grade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :university %>
+    <%= form.text_field :university %>
+  </div>
+
+  <div class="field">
+    <%= form.label :programs %>
+    <%= form.text_field :programs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :certifications %>
+    <%= form.text_field :certifications %>
+  </div>
+
+  <div class="field">
+    <%= form.label :degree %>
+    <%= form.text_field :degree %>
+  </div>
+
+  <div class="field">
+    <%= form.label :languages %>
+    <%= form.text_field :languages %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salary_expectation %>
+    <%= form.text_field :salary_expectation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_of_interest %>
+    <%= form.text_field :area_of_interest %>
+  </div>
+
+  <div class="field">
+    <%= form.label :job_type %>
+    <%= form.text_field :job_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :additional_information %>
+    <%= form.text_field :additional_information %>
+  </div>
+
+  <div class="field">
+    <%= form.label :professional_presentation %>
+    <%= form.text_field :professional_presentation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :work_experience %>
+    <%= form.text_field :work_experience %>
+  </div>
+
+  <div class="field">
+    <%= form.label :professional_reference %>
+    <%= form.text_field :professional_reference %>
+  </div>
+
+  <div class="field">
+    <%= form.label :personal_reference %>
+    <%= form.text_field :personal_reference %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skills %>
+    <%= form.text_field :skills %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hobbies %>
+    <%= form.text_field :hobbies %>
+  </div>
+
+  <div class="field">
+    <%= form.label :extracurricular_activities %>
+    <%= form.text_field :extracurricular_activities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :linkedin %>
+    <%= form.text_field :linkedin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :internships %>
+    <%= form.text_field :internships %>
+  </div>
+
+  <div class="field">
+    <%= form.label :behavioral_assessment_id %>
+    <%= form.text_field :behavioral_assessment_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :arrow_id %>
+    <%= form.text_field :arrow_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

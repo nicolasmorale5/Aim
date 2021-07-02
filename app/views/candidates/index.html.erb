@@ -1,0 +1,85 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Candidates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Genre</th>
+      <th>Legal name</th>
+      <th>Avatar</th>
+      <th>Mailing address</th>
+      <th>Country</th>
+      <th>Avatar</th>
+      <th>Postal code</th>
+      <th>Cell phone</th>
+      <th>Email</th>
+      <th>Date of grade</th>
+      <th>University</th>
+      <th>Programs</th>
+      <th>Certifications</th>
+      <th>Degree</th>
+      <th>Languages</th>
+      <th>Salary expectation</th>
+      <th>Area of interest</th>
+      <th>Job type</th>
+      <th>Additional information</th>
+      <th>Professional presentation</th>
+      <th>Work experience</th>
+      <th>Professional reference</th>
+      <th>Personal reference</th>
+      <th>Skills</th>
+      <th>Hobbies</th>
+      <th>Extracurricular activities</th>
+      <th>Linkedin</th>
+      <th>Internships</th>
+      <th>Behavioral assessment</th>
+      <th>Arrow</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @candidates.each do |candidate| %>
+      <tr>
+        <td><%= candidate.genre %></td>
+        <td><%= candidate.legal_name %></td>
+        <td><%= candidate.avatar %></td>
+        <td><%= candidate.mailing_address %></td>
+        <td><%= candidate.country %></td>
+        <td><%= candidate.avatar_id %></td>
+        <td><%= candidate.postal_code %></td>
+        <td><%= candidate.cell_phone %></td>
+        <td><%= candidate.email %></td>
+        <td><%= candidate.date_of_grade %></td>
+        <td><%= candidate.university %></td>
+        <td><%= candidate.programs %></td>
+        <td><%= candidate.certifications %></td>
+        <td><%= candidate.degree %></td>
+        <td><%= candidate.languages %></td>
+        <td><%= candidate.salary_expectation %></td>
+        <td><%= candidate.area_of_interest %></td>
+        <td><%= candidate.job_type %></td>
+        <td><%= candidate.additional_information %></td>
+        <td><%= candidate.professional_presentation %></td>
+        <td><%= candidate.work_experience %></td>
+        <td><%= candidate.professional_reference %></td>
+        <td><%= candidate.personal_reference %></td>
+        <td><%= candidate.skills %></td>
+        <td><%= candidate.hobbies %></td>
+        <td><%= candidate.extracurricular_activities %></td>
+        <td><%= candidate.linkedin %></td>
+        <td><%= candidate.internships %></td>
+        <td><%= candidate.behavioral_assessment_id %></td>
+        <td><%= candidate.arrow_id %></td>
+        <td><%= link_to 'Show', candidate %></td>
+        <td><%= link_to 'Edit', edit_candidate_path(candidate) %></td>
+        <td><%= link_to 'Destroy', candidate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Candidate', new_candidate_path %>

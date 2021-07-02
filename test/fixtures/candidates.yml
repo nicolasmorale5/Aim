@@ -1,0 +1,65 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genre: MyString
+  legal_name: MyString
+  avatar: MyString
+  mailing_address: MyString
+  country: MyString
+  avatar_id: MyString
+  postal_code: 1
+  cell_phone: 1
+  email: MyString
+  date_of_grade: 2021-07-01
+  university: MyString
+  programs: MyString
+  certifications: MyString
+  degree: MyString
+  languages: MyString
+  salary_expectation: 9.99
+  area_of_interest: MyString
+  job_type: MyString
+  additional_information: MyString
+  professional_presentation: MyString
+  work_experience: MyString
+  professional_reference: MyString
+  personal_reference: MyString
+  skills: MyString
+  hobbies: MyString
+  extracurricular_activities: MyString
+  linkedin: MyString
+  internships: MyString
+  behavioral_assessment_id: MyString
+  arrow_id: MyString
+
+two:
+  genre: MyString
+  legal_name: MyString
+  avatar: MyString
+  mailing_address: MyString
+  country: MyString
+  avatar_id: MyString
+  postal_code: 1
+  cell_phone: 1
+  email: MyString
+  date_of_grade: 2021-07-01
+  university: MyString
+  programs: MyString
+  certifications: MyString
+  degree: MyString
+  languages: MyString
+  salary_expectation: 9.99
+  area_of_interest: MyString
+  job_type: MyString
+  additional_information: MyString
+  professional_presentation: MyString
+  work_experience: MyString
+  professional_reference: MyString
+  personal_reference: MyString
+  skills: MyString
+  hobbies: MyString
+  extracurricular_activities: MyString
+  linkedin: MyString
+  internships: MyString
+  behavioral_assessment_id: MyString
+  arrow_id: MyString

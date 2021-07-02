@@ -1,0 +1,2 @@
+json.extract! candidate, :id, :genre, :legal_name, :avatar, :mailing_address, :country, :avatar_id, :postal_code, :cell_phone, :email, :date_of_grade, :university, :programs, :certifications, :degree, :languages, :salary_expectation, :area_of_interest, :job_type, :additional_information, :professional_presentation, :work_experience, :professional_reference, :personal_reference, :skills, :hobbies, :extracurricular_activities, :linkedin, :internships, :behavioral_assessment_id, :arrow_id, :created_at, :updated_at
+json.url candidate_url(candidate, format: :json)
